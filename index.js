@@ -19,10 +19,10 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  if (cart <= 0){
-    return("Your shopping cart is empty.");
-  }else {
-    return `In your cart, you have ${itemObj.itemName} at ${itemObj.itemPrice}.`;
+  if (cart.length === 0){
+    return "Your shopping cart is empty.";
+  }else if (cart.length = 1){
+    return `In your cart, you have ${cart[0]} at ${cart[0].itemPrice}.`;
   }
 }
 
