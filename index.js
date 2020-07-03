@@ -11,10 +11,19 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
+ var itemObj = {itemName:`${item}`, itemPrice: Math.floor(Math.random()*100)}
+ cart.push(itemObj);
+
+ return itemObj.itemName + " has been added to your cart."
 }
 
 function viewCart() {
   // write your code here
+  if (cart <= 0){
+    return("Your shopping cart is empty.");
+  }else {
+    return ("In your cart, you have `${itemName}` at `${itemPrice}`");
+  }
 }
 
 function total() {
