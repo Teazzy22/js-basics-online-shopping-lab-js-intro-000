@@ -46,8 +46,13 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   for(i = 0; i < cart.length; i++) {
-    cart.splice(i,1);     //removes 1 tiem at index i.
-    return cart;
+    if (item === car[i].itemName) {
+      cart.splice(i,1);     //removes 1 tiem at index i.
+      return cart;
+    }
+  }
+  if (item != cart[item]) {
+    return `The item is not in your cart.`
   }
 }
 
