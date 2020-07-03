@@ -52,7 +52,7 @@ function removeFromCart(item) {
     }
   }
   if (item != cart[item]) {
-    return "The item is not in your cart.";
+    return "That item is not in your cart.";
   }
 }
 
