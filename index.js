@@ -51,14 +51,14 @@ function removeFromCart(item) {
       return cart;
     }
   }
-  if (item != cart[item]) {
+  if (item != cart[item]) {         
     return "That item is not in your cart.";
   }
 }
 
 function placeOrder(cardNumber) {
   // write your code here
-  if (typeof(cardNumber) === "undefined") {
+  if (typeof(cardNumber) === "undefined") {         //if the card number is not provied it will read undefined
     return "Sorry, we don't have a credit card on file for you."
   }else {
     cart = [];
