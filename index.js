@@ -22,7 +22,7 @@ function viewCart() {
   if (cart <= 0){
     return("Your shopping cart is empty.");
   }else {
-    return ("In your cart, you have `${itemName}` at `${itemPrice}`");
+    return `In your cart, you have ${itemName} at ${itemPrice}`;
   }
 }
 
