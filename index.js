@@ -24,6 +24,9 @@ function viewCart() {
   }else if (cart.length = 1){
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   }
+  else if (cart.length = 2){
+    return `In your cart, you have ${cart[1].itemName} at $${cart[1].itemPrice}.`;
+  }
 }
 
 function total() {
